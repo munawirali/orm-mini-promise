@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <h1>Halaman Project</h1>
+  <a href="/project/add"><button type="button" name="button">Tambah Data</button></a></br>
+  <table style="width:100%">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Status</th>
+  </tr>
+  <%if(data){data.forEach(rows=>{%>
+  <tr>
+    <td><%rows.id%></td>
+    <td><%rows.nama%></td>
+    <td><%rows.status%></td>
+  </tr>
+  <%})}%>
+</table>
+  </body>
+</html>
